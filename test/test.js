@@ -26,10 +26,10 @@ describe("searchDownloads", function() {
 
    });
 
-it('only accepts >0 values', () => {
-      // Assert that an error will be thrown if
-      // user will tape value that is less then 0.
-      () => {
-        chrome.downloads.search = '-9';
-      }.should.throw(Error);
-    });
+describe("loadSettings", function() {
+
+     it("Assert that an error will be thrown if user will tape value that is less then 0 ", function() {
+       assert.equal(chrome.downloads.search = '-9');
+     });
+
+   });
